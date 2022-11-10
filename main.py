@@ -16,9 +16,31 @@ bot = commands.Bot(command_prefix='!joosh',intents=intents, helpCommand=helpComm
 @bot.command()
 async def Help(ctx):
   embed = discord.Embed(title="Commands list", color = 0xFF5733)
+  embed.set_thumbnail(description="This is a list of bot commands")
 
+  embed.add_field(name="!jooshHelp", value="Brings up help menu", inline=False)
 
+  embed.add_field(name="!jooshName", value="Input name to get a response", inline=False)
 
+  embed.add_field(name="!jooshAdd", value="Input two numbers to add them", inline=False)
+
+  embed.add_field(name="!jooshTime", value="Enter a time and recieve a message based on the time", inline=False)
+
+  embed.add_field(name="!jooshPic", value="Enter command to get a surprise!", inline=False)
+
+  embed.add_field(name="!jooshRandPic", value="Enter command to get a random picture", inline=False)
+
+  embed.add_field(name="!jooshEightBall", value="Enter a yes/no question and let the bot tell your future", inline=False)
+
+  embed.add_field(name="!jooshRPS", value="enter rock, paper, or scissors, and see if you can beat the bot", inline=False)
+
+  embed.add_field(name="!jooshJoke", value="Enter command to get a random joke", inline=False)
+
+  embed.add_field(name="!jooshWeather", value="Enter your zipcode to get information about the weather in your area", inline=False)
+
+  embed.add_field(name="!jooshNationality", value="Enter your name and recieve the probability of your nationality", inline=False)
+
+  embed.add_field(name="!jooshVideoGame", value="Enter the name of a game and get an image of the game (use quotes if game title has multiple words", inline=False)
 
 
 
@@ -154,22 +176,6 @@ async def Nationality(ctx, name):
   await ctx.send("Country 2: " + country2 + "  Probability 2: " + str(prob2) + "%")
   await ctx.send("Country 3: " + country3 + "  Probability 3: " + str(prob3) + "%")
   await ctx.send("Country 4: " + country4 + "  Probability 4: " + str(prob4) + "%")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
