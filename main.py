@@ -15,8 +15,7 @@ bot = commands.Bot(command_prefix='!joosh',intents=intents, helpCommand=helpComm
 
 @bot.command()
 async def Help(ctx):
-  embed = discord.Embed(title="Commands list", color = 0xFF5733)
-  embed.set_thumbnail(description="This is a list of bot commands")
+  embed = discord.Embed(title="Commands List", color = 0xFF5733)
 
   embed.add_field(name="!jooshHelp", value="Brings up help menu", inline=False)
 
@@ -42,7 +41,7 @@ async def Help(ctx):
 
   embed.add_field(name="!jooshVideoGame", value="Enter the name of a game and get an image of the game (use quotes if game title has multiple words", inline=False)
 
-
+  await ctx.send(embed=embed)
 
 @bot.event
 async def on_connect():
@@ -176,6 +175,22 @@ async def Nationality(ctx, name):
   await ctx.send("Country 2: " + country2 + "  Probability 2: " + str(prob2) + "%")
   await ctx.send("Country 3: " + country3 + "  Probability 3: " + str(prob3) + "%")
   await ctx.send("Country 4: " + country4 + "  Probability 4: " + str(prob4) + "%")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
